@@ -1,0 +1,16 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Maturarbeit",
+  "main": "play.js",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "author": "Marc Huber",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^1.19.3",
+    "socket.io": "^2.3.0"
+  }
+}
