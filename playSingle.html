@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <br>
+        <h2 id="Sieger">Programmiert von Marc Huber</h2>
+        <Title>Tic Tac Toe</Title>
+        <link rel="stylesheet" type="text/css" href="/play.css">
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,' name='viewport' />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+        <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+        <link rel="apple-touch-icon" sizes="192x192" href="touch-icon-192.png">
+        <link rel="apple-touch-startup-image" href="/launch.png">
+        <meta name="apple-mobile-web-app-title" content="TicTacToe">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#1ea5d6">
+
+
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <link rel="apple-touch-icon" href="logo192.png" />
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    </head>
+    <body scroll="no" style="overflow: hidden">
+        
+        <!-- Titel im Browser-->
+        <h1>Tic Tac Toe</h1>
+        <!-- reset Knopf -->
+        <button onClick="startGame()" id="m1">Reset</button>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <nav>
+            <a href="index.html"><button>Main Menu</button></a>
+            </nav>
+        <!-- Tabelle -->
+        <table>
+            <tr>
+                <td class="cell" id="1"></td>
+                <td class="cell" id="2"></td>
+                <td class="cell" id="3"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="4"></td>
+                <td class="cell" id="5"></td>
+                <td class="cell" id="6"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="7"></td>
+                <td class="cell" id="8"></td>
+                <td class="cell" id="9"></td>
+            </tr>
+        </table>
+        <script src="playSingle.js"></script>
+    </body>
+</html>

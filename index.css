@@ -1,0 +1,28 @@
+/*Titel in der mitte*/
+body{
+    vertical-align: middle;
+    text-align: center;
+    margin: 0; 
+    scale: 1;
+    height: 100%; 
+    width: 100%;
+    overflow: hidden;
+    background-color: #1ea5d6
+}
+html, .fullscreen {display: flex;height: 100%; margin: 0;padding: 0;width: 100%; }  
+
+button { 
+    border-radius: 4px;
+    font-size: 18;
+}
+@media screen and (max-width: 830px) and (orientation: landscape) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+}

@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <br>
+        <h3 id="Sieger">Programmiert von Marc Huber</h3>
+        <Title>Tic Tac Toe</Title>
+        <link rel="stylesheet" type="text/css" href="/play.css">
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.1, user-scalable=no,' name='viewport' />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+
+        <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+        <link rel="apple-touch-icon" sizes="192x192" href="touch-icon-192.png">
+        <link rel="apple-touch-startup-image" href="/launch.png">
+        <meta name="apple-mobile-web-app-title" content="TicTacToe">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#1ea5d6">
+
+
+
+
+    </head>
+    <body scroll="no" style="overflow: hidden">
+        
+        <!-- Titel im Browser-->
+        <h1>Tic Tac Toe</h1>
+        <!-- reset Knopf -->
+        <button onClick="reset()" id="m1" style="display: none;">Reset</button>
+        <!-- Room Wechseln Knopf -->
+        <button onClick="neuerRaum()" id="m2" style="display: none;">Raum Verlassen</button>
+        <!--Main Menu-->
+        <nav>
+            <a href="index.html" id="m3"><button>Main Menu</button></a>
+            </nav><br><br>
+        <!-- Rooms Auswahl -->
+        <button onClick="Raum(1)" id=R1>Raum 1</button><h7 id="on1"> Online: 0/2</h7><br><br>
+        <button onClick="Raum(2)" id=R2>Raum 2</button><h7 id="on2"> Online: 0/2</h7><br><br>
+        <button onClick="Raum(3)" id=R3>Raum 3</button><h7 id="on3"> Online: 0/2</h7><br><br>
+        <button onClick="Raum(4)" id=R4>Raum 4</button><h7 id="on4"> Online: 0/2</h7><br><br>
+        <button onClick="Raum(5)" id=R5>Raum 5</button><h7 id="on5"> Online: 0/2</h7><br><br>
+        <button onClick="Raum(6)" id=R6>Raum 6</button><h7 id="on6"> Online: 0/2</h7><br><br>
+        <button onClick="Raum(7)" id=R7>Raum 7</button><h7 id="on7"> Online: 0/2</h7><br><br>
+        <button onClick="Raum(8)" id=R8>Raum 8</button><h7 id="on8"> Online: 0/2</h7><br><br>
+        <!-- Tabelle -->
+        <table>
+            <tr>
+                <td class="cell" id="1" style="display: none;"></td>
+                <td class="cell" id="2" style="display: none;"></td>
+                <td class="cell" id="3" style="display: none;"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="4" style="display: none;"></td>
+                <td class="cell" id="5" style="display: none;"></td>
+                <td class="cell" id="6" style="display: none;"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="7" style="display: none;"></td>
+                <td class="cell" id="8" style="display: none;"></td>
+                <td class="cell" id="9" style="display: none;"></td>
+            </tr>
+        </table>
+        <script defer src="play.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    </body>
+</html>
